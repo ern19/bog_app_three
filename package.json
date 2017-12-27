@@ -1,0 +1,27 @@
+{
+  "name": "bog_app_three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "8.9.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "concurrently \"node app.js\" \"cd client && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd client && npm i && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.0"
+  }
+}
